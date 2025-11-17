@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>
+        <strong>{{ movie | capfirst }}</strong>
+    </h1>
+    <img src="{{ 'movie.poster.url' }}" alt="{{ movie.title }}" class="img-fluid">
+    <h3>Detalles de la pelicula:</h3>
+    <ul>
+        <li>Género: {{ movie.gender }}</li>
+        <li>Director: {{ movie.director_name }}</li>
+        <li>Año de publicación: {{ movie.year_realase }}</li>
+        <li>Sinopsis: {{ movie.synopsis }}</li>
+    </ul>
+{% endblock content %}

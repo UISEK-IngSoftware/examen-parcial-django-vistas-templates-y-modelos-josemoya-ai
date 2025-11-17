@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="p-2">
+    Seleccíone a continuación una pelicula
+</p>
+<ul class="list-group">
+    {% for movie in movies %}
+    <li class="list-group-item">
+        <a href="{{ movie.id }}">
+            {{ movie | capfirst }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
