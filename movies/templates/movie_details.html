@@ -3,7 +3,7 @@
     <h1>
         <strong>{{ movie | capfirst }}</strong>
     </h1>
-    <img src="{{ 'movie.poster.url' }}" alt="{{ movie.title }}" class="img-fluid">
+    <img src="{{ movie.poster.url }}" alt="{{ movie.title }}" class="img-fluid">
     <h3>Detalles de la pelicula:</h3>
     <ul>
         <li>Género: {{ movie.gender }}</li>
